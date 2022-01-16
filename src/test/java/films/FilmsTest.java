@@ -1,24 +1,17 @@
 package films;
 
 import base.BaseTest;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import swapi.Film;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static io.restassured.RestAssured.*;
 import static org.assertj.core.api.Assertions.*;
 
-public class FilmsTests extends BaseTest {
+public class FilmsTest extends BaseTest {
 
     @Test
     public void getOneFilm() {
